@@ -1,0 +1,400 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+#imagemLogo{
+	width:50%;
+	margin-left:22%;
+	margin-top:6%;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+ /* Estilo para LOGIN */
+#bodyLogin{
+	padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+ 
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+  margin-left:7%;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin  input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#botaoLogin{
+	width:100%;
+}
+
+#botaoSenha{
+	width:100%;
+}
+/* ------------------------------------------------------- */
+
+/* Estilo para os formulários*/
+	
+
+	#formularios {
+	
+		width:80%;
+		height:80%;
+		margin-left:25%;
+	}
+	
+	#tabelaFormulario {
+	
+		margin-left:30%;
+		margin-top:3%;
+	}
+	
+	 .tituloFormulario {
+	
+		margin-left:9%;
+		font-size:200%;
+		font-family:Verdana;
+		color:#000;
+		
+	}
+	
+	label {
+	
+		font-family:Verdana;
+		
+	}
+	
+	#permissao{
+		width:200%;
+		padding:5%;
+	}
+	
+	input[type=text],input[type=password] {
+	
+		padding:5%;
+		width:200%;
+		margin-top:3%;
+	}
+	input[type=text]:focus,input[type=password]:focus {
+		border:2px solid #1E90FF;
+	}
+	
+	#precoMetroQuadradoProduto {
+		width:35%;
+	}
+	
+	#submitFuncionarios {
+	
+		padding:15%;
+		width:420%;
+		font-family:Verdana;
+		/* background-image: linear-gradient(to bottom, transparent, #1E90FF); */
+		background-color:#1E90FF;
+		cursor: pointer;
+		opacity:0.5;
+		margin-top:15%;
+	}
+	
+	#submitFuncionarios:hover{
+		opacity:1.0;
+		/* background-image: linear-gradient(to bottom, transparent, #1E90FF); */
+		background-color:#1E90FF;
+	}
+	
+	 #submitMidias {
+	
+		padding:15%;
+		width:510%;
+		font-family:Verdana;
+		/* background-image: linear-gradient(to bottom, transparent, #1E90FF); */
+		background-color:#1E90FF;
+		opacity:0.5;
+		cursor: pointer;
+		margin-top:15%;
+	}
+	
+	#submitMidias:hover{
+		opacity:1.0;
+		background-color:#1E90FF;
+	}
+	
+	 textarea {
+				
+		width:120%;
+		height:96px;
+		resize:none;
+	}
+
+	 #submitProdutos {
+		padding:15%;
+		width:520%;
+		font-family:Verdana; /* ID só para o submit de produtos, feito para cada submit ficar do tamanho do input do formulário*/
+		/* background-image: linear-gradient(to bottom, transparent, #1E90FF); */
+		background-color:#1E90FF;
+		opacity:0.5;
+		cursor: pointer;
+		margin-top:15%;
+	}
+	
+	#submitProdutos:hover{
+		opacity:1.0;
+		background-color:#1E90FF;
+		
+	}
+	
+	#mensagem {
+	
+		width:auto;
+		height:50%;
+		margin-top:7%;
+	}
+	
+	.dadosCorretos {
+	
+		background-color:#B4EEB4;
+		padding:10px;
+		font-family:Verdana;
+		font-size:16px;
+		border-radius:2;
+		color:#000;
+
+		
+
+	}
+	/* CSS para mensagem de erro na validação dos campos*/
+	.error {
+	
+		display:block !important; 
+		color:#1E90FF !important;
+		font-size: 14px !important; /*O atributo ganha preferencia, ignorante os outros stilos*/
+	}
+	
+	/* CSS para consultas em geral */
+
+	#tabelaEscolhaConsulta { 
+	
+		margin-left:25%; /* Estilo para a tabela de consultas-f.php*/
+		margin-top:10%;
+		padding:20%;
+	}
+	
+	#tabelaEscolhaConsulta #escolhaConsulta {
+	
+		width:200%;
+		height:170%; /* Estilo para a tabela de consultas-f.php*/
+		margin-left:12%;
+	}
+
+	
+	#tabelaEscolhaConsulta #Escolha {
+	
+		font-family:Verdana; /* Estilo para a tabela de consultas-f.php*/
+		font-size:120%;
+	}
+	
+	#tabelaEscolhaConsulta #submitConsulta {
+	
+		padding:10%;
+		width:222%;
+		font-family:Verdana; /* Estilo para a tabela de consultas-f.php*/
+		font-size:110%;
+		margin-top:10%;
+		opacity:0.5;
+		background-image: linear-gradient(to bottom, transparent, #1E90FF);
+		cursor: pointer;
+	}
+	
+	#tabelaEscolhaConsulta #submitConsulta:hover {
+		opacity:1.0;
+		background-image: linear-gradient(to bottom, transparent, #1E90FF);
+	}
+	
+	#tabelaConsulta {
+	
+		width:50%;
+		height:50%;
+		margin-left:25%;
+		margin-top:8%;
+		border:2px solid #000;
+	}
+	
+	#tabelaConsulta #cabecalhoTabelaConsulta {
+		color:#1E90FF;
+		border-bottom: 1px solid #1E90FF;
+		background-color:#eee;
+		
+	}
+	
+	 #tabelaConsulta td {
+
+		font-family:Verdana;
+		font-size:110%;
+		padding:2%;
+		text-align:center;
+		
+	}
+	
+	#tabelaConsulta #botaoAlterar {
+	
+		text-decoration:none;
+		font-family:Verdana;
+		color:#000;
+		background-color:#FFFF00;
+		padding:10%;
+		opacity: 0.4;
+		border-radius:10%;
+		cursor: pointer;
+	}
+	
+	#tabelaConsulta #botaoAlterar:hover {
+		background-color:#FFFF00;
+		opacity:1.0;
+	}
+	
+	 #tabelaConsulta #botaoExcluir {
+	
+		text-decoration:none;
+		font-family:Verdana;
+		color:#000;
+		background-color:#FF0000;
+		padding:10%;
+		opacity: 0.4;
+		border-radius:10%;
+		cursor: pointer;
+	}
+	
+	#tabelaConsulta #botaoExcluir:hover {
+		background-color:#FF0000;
+		opacity:1.0;
+	}
